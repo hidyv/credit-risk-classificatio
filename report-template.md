@@ -1,6 +1,4 @@
-# credit-risk-classification
-
-
+# Module 12 Report 
 
 ## Overview of the Analysis
 
@@ -8,7 +6,7 @@ In this section, describe the analysis you completed for the machine learning mo
 
 The purpose of this analysis was to develop supervised machine learning models that can pridt the credit risk. The goal was to leverage dataset of historical lending activity from a peer-to-peer lending services company to create models capable of classifying loans as either healthy  or high-risk of defaulting. By accurately identifying high-risk loans, financial institutions can refine their lending strtegies.
 
-The financial data consists of various variables related to the loans(X)
+The financial data consists of various variables related to the loans
   * Loan size,
   * Interest rate, 
   * Borrower's income,
@@ -17,7 +15,7 @@ The financial data consists of various variables related to the loans(X)
   * Derogatory marks against the borrower, and
   * The total debt.
 
-The Loan staus is the target (y) variable denoted by "0" for healthy loans and "1"  for high_risk loans.
+The Loan staus is the target variable denoted by "0" for healthy loans and "1"  for high_risk loans.
 The total number of data points are 77536 of which  75036 are healthy loans and 2500 are unhealthy loans. this data set is split into traininag and testing sets. 
 
 The primary machine learning method employed in this analysis was logistic regression.The training set was used to build an initial logistic regression model using the LogisticRegression module from scikit-learn. This model is then applied to the testing data to see if the model can predict the status of loans.
@@ -46,5 +44,4 @@ Machine Learning Model 2 outperforms Model 1 in terms of balanced accuracy, with
 
 Considering the importance of correctly identifying high-risk loans to manage credit risk effectively, Model 2 is recommended. It achieves a higher overall accuracy and demonstrates better performance in capturing high-risk loans. By using resampling techniques to address the class imbalance, Model 2 has improved its ability to predict high-risk loans accurately.
 
-Resources
-https://www.geeksforgeeks.org/imbalanced-learn-module-in-python/
+
